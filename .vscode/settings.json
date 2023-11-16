@@ -1,0 +1,25 @@
+{
+   "tailwindCSS.experimental.configFile": "./tailwind.config.ts",
+   "eslint.enable": true,
+   "eslint.format.enable": false,
+   "eslint.options": {
+      "overrideConfigFile": "./.eslintrc.js"
+   },
+   "editor.tabSize": 3,
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "prettier.configPath": "./.prettierrc.json",
+   "prettier.requireConfig": true,
+   "editor.formatOnSave": true,
+   "eslint.validate": [
+      // Autofix is enabled by default
+      "typescript",
+      "typescriptreact"
+   ],
+   "inlineFold.unfoldOnLineSelect": true,
+   "inlineFold.autoFold": true,
+   "inlineFold.maskChar": "▶▶▶",
+   "inlineFold.regex": "(class|className)=[`'{\"]([^`'\"}]{80,})[`'\"}]",
+   "inlineFold.regexGroup": "2",
+   "tailwindCSS.lint.invalidConfigPath": "error",
+   "tailwindCSS.colorDecorators": true
+}
