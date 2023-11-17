@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from "@/components/themeProvider";
 
 export const metadata: Metadata = {
    title: "Ryan Ozawa's Portfolio",
@@ -13,7 +14,16 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en">
-         <body>{children}</body>
+         <body>
+            <ThemeProvider
+               attribute="class"
+               defaultTheme="system"
+               enableSystem
+               disableTransitionOnChange
+            >
+               {children}
+            </ThemeProvider>
+         </body>
       </html>
    );
 }

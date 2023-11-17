@@ -6,7 +6,6 @@
       "overrideConfigFile": "./.eslintrc.js"
    },
    "editor.tabSize": 3,
-   "editor.defaultFormatter": "esbenp.prettier-vscode",
    "prettier.configPath": "./.prettierrc.json",
    "prettier.requireConfig": true,
    "editor.formatOnSave": true,
@@ -21,5 +20,11 @@
    "inlineFold.regex": "(class|className)=[`'{\"]([^`'\"}]{80,})[`'\"}]",
    "inlineFold.regexGroup": "2",
    "tailwindCSS.lint.invalidConfigPath": "error",
-   "tailwindCSS.colorDecorators": true
+   "tailwindCSS.colorDecorators": true,
+   "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   }
 }
