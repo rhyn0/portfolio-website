@@ -11,7 +11,7 @@ import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function ModeToggle(): React.ReactNode {
-   const { setTheme, resolvedTheme: theme } = useTheme();
+   const { setTheme } = useTheme();
    // whether we are on client yet or not.
    const [mounted, setMounted] = useState<boolean>(false);
    useEffect(() => {
@@ -42,7 +42,6 @@ export default function ModeToggle(): React.ReactNode {
                </DropdownMenuItem>
             </DropdownMenuContent>
          </DropdownMenu>
-         <p className="text-lg text-khaki-700 dark:text-plum-300">{`Current theme is ${theme}!`}</p>
       </>
    );
 }

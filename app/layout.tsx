@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/themeProvider";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
    title: "Ryan Ozawa's Portfolio",
@@ -21,6 +22,7 @@ export default function RootLayout({
                enableSystem
                disableTransitionOnChange
             >
+               <Header />
                {children}
             </ThemeProvider>
          </body>
