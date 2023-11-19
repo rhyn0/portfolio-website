@@ -21,6 +21,11 @@
    "inlineFold.regexGroup": "2",
    "tailwindCSS.lint.invalidConfigPath": "error",
    "tailwindCSS.colorDecorators": true,
+   "tailwindCSS.experimental.classRegex": [
+      ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+      ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+      ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+   ],
    "[typescript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
