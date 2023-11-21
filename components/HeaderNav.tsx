@@ -62,8 +62,8 @@ export default function HeaderNavbar({ projects }: HeaderNavProps) {
             </NavigationMenuItem>
             <NavigationMenuItem>
                <NavigationMenuLink asChild>
-                  <Link href="/about" className="m-2 px-1">
-                     About
+                  <Link href="/contact" className="m-2 px-1">
+                     Contact
                   </Link>
                </NavigationMenuLink>
             </NavigationMenuItem>
@@ -88,7 +88,7 @@ function BannerListItem({
          <NavigationMenuLink asChild>
             <Link
                href={href}
-               className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+               className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 text-left align-middle no-underline outline-none focus:shadow-md"
             >
                <div className="mb-2 mt-5 text-lg font-medium">{title}</div>
                <p className="whitespace-normal text-sm leading-tight text-muted-foreground">

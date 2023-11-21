@@ -14,7 +14,8 @@ export default function RootLayout({
    children: React.ReactNode;
 }) {
    return (
-      <html lang="en">
+      // hydration error comes from ThemeProvider
+      <html lang="en" suppressHydrationWarning>
          <body>
             <ThemeProvider
                attribute="class"
